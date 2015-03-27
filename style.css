@@ -1,0 +1,62 @@
+.foodrecipecpt {
+    /*The following is the basis of the formatting for the plugin contents. It includes set height, width, borders, and font properties of the plugin. If these properties were not set out the plugin would have no style or aesthetically appealing */
+    font-family: 'Consolas', 'Monaco', monospace;
+    height: 100%;
+    min-height: 60px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    max-width: 831px;
+    width: 95%;
+    margin-right: 0;
+}
+
+.entry-content {
+	color: yellow;
+        font-family: 'Consolas', 'Monaco', monospace;
+        height: 100%;
+        min-height: 10px;
+        border: 2px solid black;
+}
+
+.foodrecipecpt div {
+    margin-right: 0 !important;
+}
+
+.foodrecipecpt-scroll {
+    /* Set scrolling behaviour here */
+    overflow: auto;
+}
+ins/food-recipe-cpt/style.css
+/*The following is the padding for the plugin contents. It includes both vertical and horizontal padding to the contents of the plugin. If these properties were not set out the plugin would have no style or aesthetic appeal */
+
+.foodrecipecpt-lines {
+    padding: 6px 6px; /* Vertical padding around content */
+}
+.foodrecipecpt pre {
+    padding: 0 4px; /* Horizontal padding of content */
+}
+
+.foodrecipecpt-scrollbar-filler {
+    background-color: "black"; /* The little square between H and V scrollbars */
+}
+
+.entry-content {
+	color: black;
+}
+
+foodrecipecpt {
+    line-height: 1.4;
+    position: relative;
+    overflow: hidden;
+}
+
+.foodrecipecpt-scroll {
+    /* 30px is the magic margin used to hide the element's real scrollbars */
+    /* See overflow: hidden in .foodrecipecpt, and the paddings in .foodrecipecpt-sizer */
+    margin-bottom: -30px; margin-right: -30px;
+    padding-bottom: 30px; padding-right: 30px;
+    height: 100%;
+    outline: none; /* Prevent dragging from highlighting the element */
+    position: relative;
+}
+
